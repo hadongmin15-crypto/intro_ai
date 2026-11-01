@@ -4,13 +4,13 @@
 
 ## 목차
 
-| 폴더 | 주제 | 내용 |
-|---|---|---|
-| [`knn/`](knn) | KNN | MATLAB으로 KNN을 단계별로 구현·비교한 실습 5개 |
-| [`naive-bayes/`](naive-bayes) | 나이브 베이즈 | 꽃받침 길이 하나로 Setosa / Versicolor 판별 (MATLAB, Python) |
-| [`data/`](data) | — | 실습용 데이터셋 |
+| 폴더 | 주차 | 주제 | 내용 |
+|---|---|---|---|
+| [`knn/`](knn) | 3~4주차 | KNN | MATLAB으로 KNN을 단계별로 구현·비교한 실습 5개 |
+| [`naive-bayes/`](naive-bayes) | 5주차 | 나이브 베이즈 | 꽃받침 길이 하나로 Setosa / Versicolor 판별 (MATLAB, Python) |
+| [`data/`](data) | — | — | 실습용 데이터셋 |
 
-## knn
+## knn (3~4주차)
 
 | 파일 | 내용 |
 |---|---|
@@ -20,7 +20,7 @@
 | `ex4_knn_generalization.m` | 일반화 성능 확인 |
 | `ex5_knn_space.m` | 결정 공간 시각화 |
 
-## naive-bayes
+## naive-bayes (5주차)
 
 같은 주제를 두 가지로 풀었다. 둘 다 꽃받침 길이(sepal length) 하나만 쓴다.
 
