@@ -66,3 +66,11 @@ MATLAB 실습은 MATLAB에서 각 `.m` 파일을 연다.
 pip install numpy pandas matplotlib jupyter
 jupyter notebook naive-bayes/iris_nb.ipynb
 ```
+
+파이썬 스크립트는 아래와 같이 실행한다.
+
+```bash
+python3 evaluation/binary_eval.py
+python3 covariance/ex1_covariance_population.py
+python3 covariance/ex2_covariance_sample.py
+```
