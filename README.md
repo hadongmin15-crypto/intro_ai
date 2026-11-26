@@ -9,6 +9,7 @@
 | [`knn/`](knn) | 3~4주차 | KNN | MATLAB으로 KNN을 단계별로 구현·비교한 실습 5개 |
 | [`naive-bayes/`](naive-bayes) | 5주차 | 나이브 베이즈 | 꽃받침 길이 하나로 Setosa / Versicolor 판별 (MATLAB, Python) |
 | [`evaluation/`](evaluation) | 9주차 | 성능평가 | 혼동행렬로 정확도·민감도·F1 등 7개 지표 계산 |
+| [`covariance/`](covariance) | 11주차 | 공분산 행렬 | 평균 제거 후 행렬 곱으로 공분산 행렬을 직접 구하고 NumPy와 검산 (모공분산·표본공분산) |
 | [`data/`](data) | — | — | 실습용 데이터셋 |
 
 ## knn (3~4주차)
@@ -38,6 +39,14 @@
 **`binary_eval.py`** — 혼동행렬 값(TP·FP·FN·TN)을 입력받아 이진 분류 성능을 평가한다.
 
 정확도·민감도·특이도·정밀도·음성예측도·F1-score·오분류율 7개를 계산해 출력하고, FP와 FN이 각각 어떤 문제로 이어지는지(비용 / 위험) 같이 보여준다.
+
+## covariance (11주차)
+
+평균을 뺀 데이터로 `X.T @ X`를 직접 계산해 공분산 행렬을 구하고, `np.cov` 결과와 같은지 검산한다. 두 실습의 차이는 나누는 값 하나다.
+
+**`ex1_covariance_population.py`** — 모공분산. 관측값 10개(x1, x2)에서 평균을 뺀 뒤, 데이터 개수 `n`으로 나눈다(`ddof=0`).
+
+**`ex2_covariance_sample.py`** — 표본공분산. 데이터 4개(x1, x2)에서 평균을 뺀 뒤, `n-1`로 나눈다(`ddof=1`).
 
 ## data
 
